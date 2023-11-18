@@ -2,13 +2,9 @@ package autorepair.match;
 
 import autorepair.instrument.newprocess.NewWebDriverProcess;
 import autorepair.instrument.newprocess.NewWebElementProcess;
-import autorepair.match.sftm.SFTM;
-import autorepair.match.sftm2023.SFTM2023;
-import autorepair.match.vista.VISTA;
 import autorepair.match.vista2.VISTA2;
 import autorepair.match.water.WATER;
 import autorepair.match.water.WATER2;
-import autorepair.match.webevo.WEBEVO;
 import autorepair.state.datacollect.DomNodeInfo;
 import autorepair.state.datacollect.JsonProcess;
 import autorepair.state.datacollect.PreDomNodeInfo;
@@ -53,16 +49,8 @@ public class MatchFactory {
             ioException.printStackTrace();
         }
         switch (matchMethod) {
-            case "sftm":
-                return matchBySFTM(oldStateMachine, oldEvent, driver);
-            case "sftm2023":
-                return matchBySFTM2023(oldStateMachine, newStateMachine, oldEvent, driver);
-            case "vista":
-                return matchByVista(oldStateMachine, newStateMachine, oldEvent, driver);
             case "vista2":
                 return matchByVista2(oldStateMachine, newStateMachine, oldEvent, driver);
-            case "webevo":
-                return matchByWebevo(driver, oldStateMachine, newStateMachine, oldEvent);
             case "water2":
                 return matchByWATER2(oldStateMachine, newStateMachine, oldEvent, driver);
 //            case "chatGPT":
@@ -73,32 +61,6 @@ public class MatchFactory {
         }
     }
 
-    private static String matchByChatGPT(StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine, Event oldEvent) throws IOException {
-        List<PreDomNodeInfo> oldPreDomNodeInfoList = JsonProcess.readPreDomNodeInfoJson(oldStateMachine.getSavePath() + File.separator
-                + oldEvent.getSourceVertexId() + File.separator + "preDomNodeInfo.json");
-        String oldHtml = UtilsTxtLoader.readFile02(oldStateMachine.getSavePath() + File.separator
-                + oldEvent.getSourceVertexId() + File.separator + "temp.html");
-        List<PreDomNodeInfo> newPreDomNodeInfoList = JsonProcess.readPreDomNodeInfoJson(newStateMachine.getSavePath() + File.separator
-                + newStateMachine.getSourceStateVertex().getStateVertexId() + File.separator + "preDomNodeInfo.json");
-        PreDomNodeInfo preDomNodeInfo = null;
-        for (PreDomNodeInfo temp : oldPreDomNodeInfoList) {
-            if (temp.getXpath().equals(oldEvent.getAbsoluteXpath())) {
-                preDomNodeInfo = temp;
-                break;
-            }
-        }
-
-        return null;
-    }
-
-    public static String matchByVista(StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine,
-                                      Event oldEvent, WebDriver driver) {
-        String fullScreenPath = newStateMachine.getSavePath() + newStateMachine.getSourceStateVertex().getStateVertexId() + File.separator
-                + "fullScreen.png";
-        String originalImageFile = oldStateMachine.getSavePath() + oldEvent.getSourceVertexId() + File.separator +
-                oldEvent.getElementId() + ".png";
-        return VISTA.retrieveDomNode(fullScreenPath, originalImageFile, driver);
-    }
 
     public static String matchByVista2(StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine,
                                        Event oldEvent, WebDriver driver) throws IOException {
@@ -1162,33 +1124,6 @@ public class MatchFactory {
     }
 
 
-    public static String matchBySFTM(StateMachineImpl oldStateMachine, Event oldEvent, WebDriver driver)
-            throws IOException {
-        String oldHtml = UtilsTxtLoader.readFile02(oldStateMachine.getSavePath() + File.separator
-                + oldEvent.getSourceVertexId() + File.separator + "temp.html");
-        String newHtml = UtilsSeleniumHelper.getHtml(driver);
-        SFTM sftm = new SFTM();
-
-        sftm.match(oldHtml, newHtml);
-
-        return sftm.getNewXpath(oldEvent.getAbsoluteXpath());
-    }
-
-    public static String matchBySFTM2023(StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine, Event oldEvent, WebDriver driver)
-            throws IOException {
-        String oldHtml = UtilsTxtLoader.readFile02(oldStateMachine.getSavePath() + File.separator
-                + oldEvent.getSourceVertexId() + File.separator + "temp.html");
-
-        SFTM2023 sftm = new SFTM2023();
-        sftm.match(oldStateMachine.getSavePath() + File.separator
-                        + oldEvent.getSourceVertexId() + File.separator + "temp.html",
-                newStateMachine.getSavePath() + File.separator
-                        + newStateMachine.getSourceStateVertex().getStateVertexId()
-                        + File.separator + "temp.html");
-
-        return sftm.getNewXpath(oldEvent.getAbsoluteXpath());
-    }
-
     public static String matchByWATER2(StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine,
                                        Event oldEvent, WebDriver driver) throws IOException {
         List<PreDomNodeInfo> oldPreDomNodeInfoList = JsonProcess.readPreDomNodeInfoJson(oldStateMachine.getSavePath() + File.separator
@@ -1262,24 +1197,5 @@ public class MatchFactory {
         }
     }
 
-    public static String matchByWebevo(WebDriver driver, StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine, Event oldEvent) throws IOException {
-        List<PreDomNodeInfo> newPreDomNodeInfoList = JsonProcess.readPreDomNodeInfoJson(newStateMachine.getSavePath() + File.separator
-                + newStateMachine.getSourceStateVertex().getStateVertexId() + File.separator + "preDomNodeInfo.json");
-        List<PreDomNodeInfo> oldPreDomNodeInfoList = JsonProcess.readPreDomNodeInfoJson(oldStateMachine.getSavePath() + File.separator
-                + oldEvent.getSourceVertexId() + File.separator + "preDomNodeInfo.json");
-        String targetText = oldPreDomNodeInfoList.get(oldEvent.getElementId()).getText();
-        int index = oldEvent.getElementId();
-        String targetPath = oldStateMachine.getSavePath() + oldEvent.getSourceVertexId() +
-                File.separator + index + ".png";
-        System.out.println(targetPath);
-        System.out.println(newStateMachine.getSavePath() + File.separator
-                + newStateMachine.getSourceStateVertex().getStateVertexId() + File.separator + "preDomNodeInfo.json");
-        String candidateLocation = newStateMachine.getSavePath() + File.separator
-                + newStateMachine.getSourceStateVertex().getStateVertexId() + File.separator
-                + "candidate" + File.separator;
-        WEBEVO webevo = new WEBEVO();
-        String xpath = webevo.processingCandidatesImage(driver, candidateLocation, newPreDomNodeInfoList, targetText, targetPath);
 
-        return xpath;
-    }
 }
