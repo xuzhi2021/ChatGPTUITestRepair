@@ -1,0 +1,4 @@
+The most similar element's numericId: 39. Because they share the most similar attributes: class, xpath, text.
+Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText(), "You left some required fields empty");
+selection time: 2.6867754459381104
+repair time: 20.192137956619263

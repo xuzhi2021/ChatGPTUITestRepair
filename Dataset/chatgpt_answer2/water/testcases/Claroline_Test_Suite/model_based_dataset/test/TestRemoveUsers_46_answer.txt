@@ -1,0 +1,7 @@
+The most similar element's numericId: 39. Because they share the most similar attributes: class, xpath, text.
+Repaired statement:
+
+String successMessage = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText();
+assertEquals(successMessage, "Deletion of the user was done sucessfully");
+selection time: 2.5943264961242676
+repair time: 5.089945554733276

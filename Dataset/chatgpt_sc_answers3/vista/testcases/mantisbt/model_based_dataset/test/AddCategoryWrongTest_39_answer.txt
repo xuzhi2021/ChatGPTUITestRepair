@@ -1,0 +1,2 @@
+The most similar element's numericId: 27. Because they share the most similar attributes: xpath, text, tagName.
+selection time: 2.784005641937256

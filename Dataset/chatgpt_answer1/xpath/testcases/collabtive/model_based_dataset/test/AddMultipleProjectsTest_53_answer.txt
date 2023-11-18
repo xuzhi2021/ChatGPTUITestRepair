@@ -1,0 +1,7 @@
+The most similar element's numericId: 173. Because they share the most similar attributes: id, name, class, xpath, text, tagName.
+Repaired statement:
+
+WebElement endInput = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/fieldset[1]/div[4]/input[1]"));
+endInput.click();
+selection time: 8.750881433486938
+repair time: 11.885740280151367

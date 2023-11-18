@@ -1,0 +1,4 @@
+The most similar element's numericId: 2. Because they share the most similar attributes: id, class, xpath, text, tagName, x, y, width, height.
+Repaired statement: driver.findElement(By.xpath("/html/body/div[1]")).click();
+selection time: 4.293210983276367
+repair time: 2.207347869873047

@@ -1,0 +1,4 @@
+The most similar element's numericId: 71. Because they share the most similar attributes: xpath, text, tagName, x, y, width, height, isLeaf.
+Repaired statement: driver.findElement(By.className("category")).sendKeys("Category1");
+selection time: 6.897927522659302
+repair time: 3.421542167663574

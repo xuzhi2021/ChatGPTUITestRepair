@@ -1,0 +1,4 @@
+The most similar element's numericId: 360. Because they share the most similar attributes: xpath, text, tagName.
+Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html/body/div[2]/table[2]/tbody/tr/td[1]/div[1]")).getText(), "External");
+selection time: 2.622997999191284
+repair time: 3.5130581855773926

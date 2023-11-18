@@ -1,0 +1,6 @@
+The most similar element's numericId: 48. Because they share the most similar attributes: xpath, tagName.
+Repaired statement:
+
+driver.findElement(By.xpath("/html/body/div[2]/form/fieldset/input[3]")).click();
+selection time: 2.3446481227874756
+repair time: 4.32631254196167
