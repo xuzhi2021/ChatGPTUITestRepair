@@ -12,71 +12,72 @@ We present the first study that investigates the feasibility of using prior Web 
 
 ![image-20231118075255991](README.assets/image-20231118075255991.png)
 
-##### Element Extraction
+#### Element Extraction
 
 Element extraction and candidate selection are finished with adapted UITestFix in folder ''Extraction''.
 
-Run old web UI test scripts with UITestFix on old webpage can store the information of each element mentioned in each statement.
+Running old web UI test scripts with UITestFix on old webpage can store the information of each element mentioned in each statement.
 
-Run old tests on the new webpage. UITestFix will catch  exception when breakage happens. It will also extract elements from new webpage. 
+Then run old tests on the new webpage. UITestFix will catch  exception when breakage happens. It will also extract elements from new webpage. 
 
-##### Selecting Candidate 
+#### Selecting Candidate 
 
-From all the element extracted on the new webpage, we can generate candidate list with desired size and candidate selection algorithms and store them locally.
+From all the element extracted on the new webpage, we can generate candidate list with desired size and candidate selection algorithms, and store them locally.
 
-UITestFix can load the target element information stored in previous step so that we know the target element that we want to match when generating candidate list.
+When adapted UITestFix detect breakages, it can load the target element information stored in previous step so that we know which element we want to match (called taret element in the workflow graph).
 
-Then we can generate candidate list with desired size and candidate selection algorithms. In our experiment, we use three candidate selection approaches: VISTA, WATER and XPath Edit Distance. 
-
-
-
-##### Matching prompts
-
-Use ''chatgpt_repair.py'' to send designed matching prompt to ChatGPT and store the answer correspondingly.
+Based on the target element, adapted UITestFix can generate candidate list with desired size and candidate selection algorithms. In our experiment, we use three candidate selection approaches: VISTA, WATER and XPath Edit Distance.  You can implement other candidate selection algorithms in the framework and test its effectiveness.
 
 
 
-##### Explanation Validator
+#### Matching prompts
 
-Firstly, run ''generate_attributes.py'' to format the information of target element and candidate elements and store locally. 
+Use ''chatgpt_repair.py'' to send designed matching prompt to ChatGPT and store the answer correspondingly. You can also change the prompt according to your own design.
+
+
+
+#### Explanation Validator
+
+Firstly, run ''generate_attributes.py'' to format the information of target element and candidate elements generated in the element extraction step. 
 
 Secondly, run ''generate_similarities.py'' to find out considering each attribute, which candidate element is the most similar one to the target element.
 
-The file ''explanation_validator.py'' parse the matching result from ChatGPT's answer of matching prompt and the corresponding explanation. We ask ChatGPT to explain by listing the attribute it consider while matching. The validator check what attributes ChatGPT mentioned, whether the attribute is the most similar to that of target element on the old webpage.
+The file ''explanation_validator.py'' parse the matching result from ChatGPT's answer of matching prompt and the corresponding explanation. We ask ChatGPT to explain by listing the attribute it considered in matching. The validator check what attributes ChatGPT mentioned, and whether each mentioned attribute is most similar to that of target element on the old webpage.
 
 
 
-##### Repair prompt
+#### Repair prompt
 
-Use ''chatgpt_repair.py'' to send designed repair prompt to ChatGPT and store the answer correspondingly.
+Use ''chatgpt_repair.py'' to send designed repair prompt to ChatGPT and store the answer correspondingly. You can also change the prompt according to your own design.
 
 
 
-##### Repair Validator
+#### Repair Validator
 
-"analysis_repair.py" parses the statement to separate assertion and locator parts and format them.
+"analysis_repair.py" parses the statement to separate locator part and other parts (e.g. assertion), and format them.
 
 ''analysis_repair1.py'' first checks whether the matching result is correct. If correct, then check whether the parts outside locator keep still. Thirdly, check whether ChatGPT repairs the locator according to given element information correctly.
 
+If the parts outside locator change (this may happen because ChatGPT has diverse code generation patter), we manually check whether the changes are reasonable and compilable.
 
 
-##### Self-correction
+#### Self-correction
 
-We filter the repair failure cases whose explanation consistency is lower than 1 to generate self-correction prompt and let ChatGPT to self-correct. If ChatGPT selects a different matching result under the guidance,  we will send repair prompt according to its new selection to it. 
+We filter the repair failure cases whose explanation consistency is lower than 1 to generate self-correction prompt and let ChatGPT to self-correct. The prompt will tell ChatGPT its previous selection and explanation, and explanation of which attributes are inconsistent judged by our explanation validator. If ChatGPT selects a different matching result under the self-correction prompt,  we will send repair prompt according to its new selection to it. 
 
-After finishing self-correction, we validate the result again to check whether there is any improvement.
+After finishing, we validate the result again to check whether there is any improvement.
 
 ## Dataset
 
-##### Dataset folder contains:
+#### Dataset folder contains:
 
 broken statements
 
-corresponding labelled ground-truth
+corresponding labelled ground-truth (we record the XPath of the desired element on the new webpage)
 
-candidate elements generated by 3 different approaches
+candidate elements generated by 3 different approaches (for each broken statement)
 
-target elements
+target elements (for each broken statement)
 
 prompts (matching prompt, repair prompt and self-correctness prompt)
 
