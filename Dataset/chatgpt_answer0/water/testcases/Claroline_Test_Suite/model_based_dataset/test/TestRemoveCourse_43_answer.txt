@@ -6,5 +6,3 @@ Explanation: The repaired statement updates the XPath locator to use an absolute
 Updated assertion: Assert.assertEquals("The course has been successfully deleted", driver.findElement(By.xpath("/html/body/div/div[2]/div/div")).getText());
 
 Explanation: The updated assertion uses the same XPath locator to verify that the text of the element matches the expected value.
-selection time: 8.40400218963623
-repair time: 9.678000211715698

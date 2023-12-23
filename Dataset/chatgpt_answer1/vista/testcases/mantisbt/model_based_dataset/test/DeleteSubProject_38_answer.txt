@@ -10,5 +10,3 @@ The outdated assertion of the broken statement is checking the href attribute va
 Result of repaired statement: 
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 11.08100414276123
-repair time: 14.708754539489746

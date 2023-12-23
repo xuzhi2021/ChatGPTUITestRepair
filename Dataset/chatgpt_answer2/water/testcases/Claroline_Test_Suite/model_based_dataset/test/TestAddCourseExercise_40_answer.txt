@@ -8,5 +8,3 @@ Explanation:
 - I have updated the XPath locator to identify the element.
 - I have assigned the text of the element to a variable named "successMessage".
 - The assertion now compares the value of "successMessage" with the expected value "Exercise added".
-selection time: 2.2622530460357666
-repair time: 8.703205347061157

@@ -7,5 +7,3 @@ Explanation:
 The repaired statement updates the XPath locator to match the selected element's XPath ("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]"). This will ensure that the correct element is located on the page. 
 
 Additionally, the outdated assertion "[@href='manage_proj_page.php']" is removed as it is not present in the selected element's attributes.
-selection time: 5.999000310897827
-repair time: 10.365002870559692

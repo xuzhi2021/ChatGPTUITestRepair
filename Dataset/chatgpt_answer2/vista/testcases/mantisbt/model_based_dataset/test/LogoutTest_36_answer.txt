@@ -8,5 +8,3 @@ The repaired statement finds the element using the updated XPath locator ("/html
 Outdated assertion: `@href='logout_page.php'`
 
 Repaired assertion: No assertion is needed for this statement as it is just clicking on the element.
-selection time: 16.01292109489441
-repair time: 23.780105113983154

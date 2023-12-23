@@ -7,5 +7,3 @@ Explanation:
 
 Result of repaired statement:
 The repaired statement will click on the "Manage Projects" link on the webpage.
-selection time: 5.229693651199341
-repair time: 17.219616174697876

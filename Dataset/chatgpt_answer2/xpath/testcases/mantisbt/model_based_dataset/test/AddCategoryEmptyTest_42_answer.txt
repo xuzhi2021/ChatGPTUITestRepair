@@ -23,5 +23,3 @@ Explanation:
   - Assertion: None
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 5.8045055866241455
-repair time: 19.50022315979004

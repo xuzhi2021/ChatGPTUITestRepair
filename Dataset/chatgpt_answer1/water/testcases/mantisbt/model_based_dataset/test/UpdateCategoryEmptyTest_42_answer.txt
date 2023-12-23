@@ -6,5 +6,3 @@ Based on the selected element, the repaired statement uses the full XPath of the
 
 Updated Assertion:
 The outdated assertion in the original statement is checking the href value of the element. Since the selected element does not provide the href attribute, we cannot update the assertion based on the selected element. You may need to check the requirements or inspect the element again to provide the correct assertion for the repaired statement.
-selection time: 2.7349636554718018
-repair time: 12.700043201446533

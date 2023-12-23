@@ -6,5 +6,3 @@ Repaired statement:
 ```java
 Assert.assertEquals(driver.findElement(By.xpath("//u[contains(text(),'Areas')]")).getText(), "Areas");
 ```
-selection time: 4.059240341186523
-repair time: 4.516756772994995

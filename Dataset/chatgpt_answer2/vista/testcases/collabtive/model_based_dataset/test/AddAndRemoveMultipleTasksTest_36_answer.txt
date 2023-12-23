@@ -6,5 +6,3 @@ The repaired statement uses the XPath locator "/html[1]/body[1]/div[1]/div[2]/di
 Outdated assertion: The assertion of the broken statement is not provided.
 
 Please provide the outdated assertion so that it can be updated accordingly.
-selection time: 6.424771308898926
-repair time: 16.485100269317627

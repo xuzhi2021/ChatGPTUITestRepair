@@ -5,5 +5,3 @@ Explanation:
 
 - The repaired statement updates the XPath locator to match the selected element which has the similar attributes.
 - The outdated assertion does not exist in the given broken statement, so it does not need to be updated.
-selection time: 5.325597524642944
-repair time: 9.771977186203003

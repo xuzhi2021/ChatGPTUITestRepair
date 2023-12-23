@@ -3,5 +3,3 @@ Repaired statement: driver.findElement(By.xpath("/html/body/div/div[2]/div/div[1
 
 Explanation:
 The repaired xpath locates the div element with the class "claroDialogMsg msgSuccess" which is the most similar to the target element. The click action remains the same.
-selection time: 6.423046350479126
-repair time: 15.837971687316895

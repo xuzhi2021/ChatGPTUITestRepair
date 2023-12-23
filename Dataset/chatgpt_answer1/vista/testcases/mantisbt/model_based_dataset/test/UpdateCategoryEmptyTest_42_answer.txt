@@ -9,5 +9,3 @@ The outdated assertion in the broken statement is "//a[@href='manage_proj_page.p
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
 
 The repaired statement uses the updated locator based on the selected element to locate and click on the "Manage Projects" link.
-selection time: 6.495263576507568
-repair time: 35.797646045684814

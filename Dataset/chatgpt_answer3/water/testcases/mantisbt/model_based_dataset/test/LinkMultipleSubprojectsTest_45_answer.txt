@@ -6,5 +6,3 @@ Updated locator: By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")
 Updated assertion: None
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 2.3219168186187744
-repair time: 8.62685227394104

@@ -6,5 +6,3 @@ driver.findElement(By.xpath("/html/body/div[2]/form/fieldset/input[3]")).click()
 Updated locator: By.xpath("/html/body/div[2]/form/fieldset/input[3]")
 
 The outdated assertion of the broken statement cannot be determined as it was not provided.
-selection time: 3.2591965198516846
-repair time: 6.4684834480285645

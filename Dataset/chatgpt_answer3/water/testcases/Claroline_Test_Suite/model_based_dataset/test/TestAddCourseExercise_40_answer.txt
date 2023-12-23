@@ -4,5 +4,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/bo
 In this repaired statement, I updated the locator to use the XPath of the selected element which is "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]". I also removed the extra closing parenthesis at the end of the statement.
 
 Result of repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText(), "Exercise added");
-selection time: 19.320369482040405
-repair time: 12.308033227920532

@@ -10,5 +10,3 @@ Repaired statement:
 ```
 driver.findElement(By.linkText("Manage Users")).click();
 ```
-selection time: 3.9880011081695557
-repair time: 8.30900239944458

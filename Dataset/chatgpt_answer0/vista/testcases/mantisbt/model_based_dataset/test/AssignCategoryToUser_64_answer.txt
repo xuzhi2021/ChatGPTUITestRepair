@@ -7,5 +7,3 @@ The broken statement tries to find an element by its name attribute with the val
 Based on the selected element with the numericId=71, we can use a different locator, in this case, the xpath locator. The xpath "/html[1]/body[1]/div[3]/form[1]/table[1]/tbody[1]/tr[3]/td[1]" represents the element "Status", which is the closest match to the target element. 
 
 Therefore, the repaired statement uses the xpath locator to find the element and then sends the keys "Category1" to it.
-selection time: 5.177956581115723
-repair time: 25.403541564941406

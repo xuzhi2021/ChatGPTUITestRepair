@@ -5,5 +5,3 @@ Explanation:
 Based on the selected element, we can update the XPath locator to "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]" and remove the outdated assertion for the href attribute.
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 5.82828688621521
-repair time: 12.460397720336914

@@ -5,5 +5,3 @@ Explanation:
 Based on the selected element, the updated locator would be "/html/body/div[2]/form/fieldset" which represents the fieldset element. 
 
 Since there is no specific element mentioned in the broken statement, we cannot accurately update the assertion. Therefore, the outdated assertion remains unchanged.
-selection time: 4.385254859924316
-repair time: 20.390796661376953

@@ -4,5 +4,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody
 Explanation: The repaired statement uses the XPath locator based on the selected element's XPath. Since the provided element has a unique XPath, it can be used directly to locate and click the element.
 
 Note: It is important to ensure that the selected element is indeed the correct element to use for repairing the broken statement.
-selection time: 4.706003904342651
-repair time: 10.181002378463745

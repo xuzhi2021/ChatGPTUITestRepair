@@ -10,5 +10,3 @@ Result of repaired statement:
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
 Assert.assertTrue(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).isDisplayed());
-selection time: 3.887596368789673
-repair time: 16.509475231170654

@@ -1,4 +1,2 @@
 The most similar element's numericId: 39. Because they share the most similar attributes: name, xpath.
 Repaired statement: driver.findElement(By.name("bug_id")).sendKeys("Category1");
-selection time: 2.8019661903381348
-repair time: 2.0370001792907715

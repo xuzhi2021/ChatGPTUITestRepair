@@ -6,5 +6,3 @@ Explanation:
 - The outdated assertion message has been replaced with the correct expected text "Deletion of the user was done sucessfully".
 
 Result of repaired statement: The repaired statement will verify if the text of the selected element matches the expected text "Deletion of the user was done sucessfully".
-selection time: 8.009352922439575
-repair time: 11.492833375930786

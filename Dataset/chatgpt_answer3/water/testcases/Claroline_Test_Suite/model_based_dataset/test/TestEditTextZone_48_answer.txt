@@ -3,5 +3,3 @@ Repaired statement:
 
 Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]")).getText(), 
 "The changes have been carried out correctly\ntextzone_top.inc.html");
-selection time: 7.49618124961853
-repair time: 5.246530532836914

@@ -3,5 +3,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/bo
 
 Explanation: 
 - The updated locator is the xpath "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]", which corresponds to the selected element.
-selection time: 26.268200397491455
-repair time: 27.38103461265564

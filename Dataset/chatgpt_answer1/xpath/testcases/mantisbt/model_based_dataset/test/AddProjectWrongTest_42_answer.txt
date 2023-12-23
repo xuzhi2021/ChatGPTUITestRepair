@@ -9,5 +9,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/sp
 In this updated statement, we are using the full XPath of the "Manage Projects" link element that was selected as the most similar element. This ensures that we are finding the exact element that we want to interact with.
 
 Note: The assertion part of the broken statement is not mentioned, so it remains the same.
-selection time: 3.792196273803711
-repair time: 19.327304363250732

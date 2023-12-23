@@ -7,5 +7,3 @@ Outdated assertion: @href='manage_proj_page.php'
 
 Repaired statement result:
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 3.8315956592559814
-repair time: 17.73836851119995

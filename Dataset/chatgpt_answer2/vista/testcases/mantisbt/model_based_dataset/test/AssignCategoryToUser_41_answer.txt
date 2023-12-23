@@ -8,5 +8,3 @@ Based on the selected element {numericId=27, id='', name='', class='menu', xpath
 The updated locator in the repaired statement is using XPath and contains the text 'Manage' to locate the element. This will ensure that the element with the text 'Manage' is found, even if it is surrounded by other text or elements. 
 
 The repaired statement clicks on the 'Manage' link.
-selection time: 9.02271032333374
-repair time: 34.79421520233154

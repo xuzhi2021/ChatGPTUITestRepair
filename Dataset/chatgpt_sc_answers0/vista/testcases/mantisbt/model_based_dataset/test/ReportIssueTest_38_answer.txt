@@ -1,4 +1,2 @@
 The most similar element's numericId: 110. Because they share the most similar attributes: xpath, tagName, isLeaf.
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[2]/a[contains(@href,'bug_report_page.php')]")).click();
-selection time: 3.411997079849243
-repair time: 4.87500262260437

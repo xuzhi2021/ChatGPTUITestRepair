@@ -9,5 +9,3 @@ Explanation:
 - The repaired statement uses the XPath "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]" to locate the element.
 - The outdated assertion in the previous statement is also fixed in the repaired statement.
 - The repaired statement asserts that the text of the selected element is equal to "Event added to the agenda."
-selection time: 3.7056283950805664
-repair time: 19.12042737007141

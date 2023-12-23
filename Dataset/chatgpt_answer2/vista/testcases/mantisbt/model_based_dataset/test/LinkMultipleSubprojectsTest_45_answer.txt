@@ -6,5 +6,3 @@ Explanation:
 The repaired statement updates the xpath locator to target the specific element "Manage Projects" by traversing through the HTML structure. The new xpath locates the element using the parent div, paragraph, span, and finally the anchor tag. This xpath is more specific and less likely to break due to changes in the HTML structure.
 
 Additionally, there is no need for the outdated assertion in this statement, as it is only performing a click action on the element.
-selection time: 5.805851936340332
-repair time: 14.467434644699097

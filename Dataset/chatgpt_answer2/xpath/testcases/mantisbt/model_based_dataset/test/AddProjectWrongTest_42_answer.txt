@@ -6,5 +6,3 @@ Explanation: The repaired statement uses the XPath locator "/html[1]/body[1]/div
 Repaired assertion: Assert.assertTrue(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).isDisplayed());
 
 Explanation: The repaired assertion checks if the element is displayed after being clicked. It uses the same XPath locator as the repaired statement to locate the element.
-selection time: 3.257495880126953
-repair time: 11.633982181549072

@@ -5,5 +5,3 @@ Explanation:
 Based on the selected element with a similar locator, the repaired statement uses the XPath locator "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]" to find the "Manage Projects" link. The outdated assertion is the href attribute value "= 'manage_proj_page.php'". Since the href attribute value is not available in the selected element, it is removed from the repaired statement.
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 3.7283880710601807
-repair time: 14.00652551651001

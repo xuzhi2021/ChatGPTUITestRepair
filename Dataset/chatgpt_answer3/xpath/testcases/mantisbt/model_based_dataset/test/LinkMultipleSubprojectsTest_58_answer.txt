@@ -6,5 +6,3 @@ Updated locator: By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")
 Updated assertion: None (remove the assertion as it is outdated)
 
 Result of repaired statement: Click on the "Manage Projects" link.
-selection time: 4.664385080337524
-repair time: 8.418585777282715

@@ -5,5 +5,3 @@ element.click();
 String actualText = element.getText();
 String expectedText = "The new user has been sucessfully created";
 assertEquals(expectedText, actualText);
-selection time: 2.543999671936035
-repair time: 5.347998142242432

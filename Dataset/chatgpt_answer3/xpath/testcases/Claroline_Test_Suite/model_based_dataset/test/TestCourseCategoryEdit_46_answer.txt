@@ -7,5 +7,3 @@ Explanation:
 - Enclosed the expected text "Category modified" in quotes.
 
 Result of the repaired statement: The assertion will check if the text of the selected element matches the expected text "Category modified".
-selection time: 15.17831802368164
-repair time: 10.363607168197632

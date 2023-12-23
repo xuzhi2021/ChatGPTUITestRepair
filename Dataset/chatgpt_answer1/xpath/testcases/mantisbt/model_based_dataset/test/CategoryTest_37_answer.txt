@@ -8,5 +8,3 @@ Updated Assertion: There is no assertion provided in the broken statement. If yo
 Assert.assertTrue(driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[8]")).isEnabled());
 
 This assertion checks if the element is enabled and clickable.
-selection time: 4.284824371337891
-repair time: 18.02816081047058

@@ -3,5 +3,3 @@ Repaired statement:
 
 WebElement element = driver.findElement(By.xpath("/html[1]/body[1]/div[3]/form[1]/table[1]/tbody[1]/tr[2]/td[2]/input[1]"));
 element.clear();
-selection time: 2.547142744064331
-repair time: 4.94636869430542

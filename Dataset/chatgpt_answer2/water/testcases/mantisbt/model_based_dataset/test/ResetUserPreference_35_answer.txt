@@ -7,5 +7,3 @@ Updated locator: By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")
 Updated assertion: None
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")).click();
-selection time: 3.9495174884796143
-repair time: 13.32032585144043

@@ -4,5 +4,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/sp
 Updated locator: By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")
 
 Updated assertion: No assertion mentioned in the given statement. Please provide the desired assertion for the repaired statement.
-selection time: 7.389251708984375
-repair time: 7.398874044418335

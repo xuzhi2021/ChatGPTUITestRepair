@@ -4,5 +4,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/bo
 Explanation: 
 - The locator of the element has been updated to use the complete XPath address of the element ("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]").
 - The outdated assertion has been replaced with the correct expected text ("Event added to the agenda.").
-selection time: 6.960434913635254
-repair time: 8.885335922241211

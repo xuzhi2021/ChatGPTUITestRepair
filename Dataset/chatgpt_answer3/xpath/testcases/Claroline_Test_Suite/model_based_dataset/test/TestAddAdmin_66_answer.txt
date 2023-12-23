@@ -6,5 +6,3 @@ Updated locator: xpath="/html/body/div/div[2]/div/div"
 Outdated assertion: N/A
 
 Repaired statement: N/A (No assertion is provided in the broken statement)
-selection time: 3.0372612476348877
-repair time: 5.352281093597412

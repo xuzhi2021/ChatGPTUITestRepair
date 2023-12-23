@@ -25,5 +25,3 @@ Repaired statement:
 ```java
 driver.findElement(By.xpath("//a[contains(text(),'CS213 - Computer Science')]")).click();
 ```
-selection time: 4.159017324447632
-repair time: 29.255027055740356

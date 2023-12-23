@@ -13,5 +13,3 @@ assert.assertEquals(message2, "Course code needed");
 Result of the repaired statement:
 
 This statement will find the element with the updated XPath locator and retrieve its text using the getText() method. The retrieved text will be compared to the expected value "Course code needed" using the updated assertion.
-selection time: 3.1453468799591064
-repair time: 14.499609470367432

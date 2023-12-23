@@ -9,5 +9,3 @@ Repaired statement with assertion:
 WebElement element = driver.findElement(By.xpath("/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[1]"));
 element.click();
 Assert.assertTrue(element.isEnabled());
-selection time: 5.096033811569214
-repair time: 32.92226314544678

@@ -5,5 +5,3 @@ Explanation:
 - Updated the xpath locator to match the selected element.
 - Removed the duplicated getText() function.
 - Updated the expected text to "Exercise added" for comparison.
-selection time: 2.6650242805480957
-repair time: 9.533190250396729

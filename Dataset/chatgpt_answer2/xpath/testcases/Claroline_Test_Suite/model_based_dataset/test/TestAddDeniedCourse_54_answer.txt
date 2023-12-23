@@ -3,5 +3,3 @@ Repaired statement:
 
 Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText(),
 "You have just created the course website : 225");
-selection time: 4.446434497833252
-repair time: 3.911374807357788

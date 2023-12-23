@@ -8,5 +8,3 @@ Since the repaired statement is finding the element using its XPath, there is no
 
 Repaired statement: 
 driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")).click();
-selection time: 4.370948791503906
-repair time: 14.938331604003906

@@ -6,5 +6,3 @@ Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/
 Explanation: 
 - Updated the xpath locator to point to the selected element: "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]"
 - The outdated assertion has been replaced with the updated locator of the selected element.
-selection time: 24.478227138519287
-repair time: 10.894959449768066

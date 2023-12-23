@@ -8,5 +8,3 @@ Updated assertion: assert driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p
 
 Result of repaired statement:
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 3.808095932006836
-repair time: 20.426480531692505

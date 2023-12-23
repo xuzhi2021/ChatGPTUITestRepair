@@ -9,5 +9,3 @@ driver.findElement(By.xpath("/html/body/div/div[2]/div/div[1]/div/div[2]/div[1]/
 
 Note: 
 Based on the provided information, there is no outdated assertion in the broken statement.
-selection time: 7.352274179458618
-repair time: 26.133703470230103

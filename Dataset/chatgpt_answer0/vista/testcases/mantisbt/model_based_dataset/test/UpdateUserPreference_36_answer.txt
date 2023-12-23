@@ -7,5 +7,3 @@ Updated locator: By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")
 Outdated assertion: @href='account_page.php'
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")).click();
-selection time: 6.341888189315796
-repair time: 28.754193782806396

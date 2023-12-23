@@ -6,5 +6,3 @@ String message = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div
 
 // Update the assertion
 assertEquals("You have just created the course website : CS213", message);
-selection time: 2.725996971130371
-repair time: 6.480001211166382

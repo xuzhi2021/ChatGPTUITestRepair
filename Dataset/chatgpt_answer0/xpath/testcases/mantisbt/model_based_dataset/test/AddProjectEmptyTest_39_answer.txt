@@ -8,5 +8,3 @@ Updated Assertion: I assume that the outdated assertion is checking whether the 
 assert driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).isDisplayed();
 
 Result of Repaired Statement: The repaired statement will click on the "Manage Projects" link if the element is found and will assert that the element is displayed.
-selection time: 2.223001003265381
-repair time: 15.06205153465271

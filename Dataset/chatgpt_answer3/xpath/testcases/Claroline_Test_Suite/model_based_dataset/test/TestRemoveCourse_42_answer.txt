@@ -10,5 +10,3 @@ Repaired statement:
 WebElement element = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[1]/div[1]"));
 element.click();
 ```
-selection time: 3.294433832168579
-repair time: 13.644864082336426

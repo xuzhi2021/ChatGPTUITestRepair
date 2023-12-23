@@ -19,5 +19,3 @@ height: 21
 isLeaf: true
 
 The repaired statement uses the updated xpath locator of the selected element to find the input field and then sends the desired value "Test" to it.
-selection time: 3.631502151489258
-repair time: 24.038429021835327

@@ -5,5 +5,3 @@ Explanation:
 - The id attribute is missing, so we cannot use it in the updated statement.
 - The xpath locator in the repaired statement is updated to "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]" based on the selected element.
 - The outdated assertion is not changed as it is still verifying if the text is "You typed two different passwords".
-selection time: 6.2874040603637695
-repair time: 10.56250524520874

@@ -26,5 +26,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[3]/form[1]/table[1]/tbody[1]/t
 ```
 
 Note: The repaired statement assumes that the element with the given xpath is the intended element to be cleared. Please verify the correctness of the xpath before executing the repaired statement.
-selection time: 3.187000036239624
-repair time: 26.533987283706665

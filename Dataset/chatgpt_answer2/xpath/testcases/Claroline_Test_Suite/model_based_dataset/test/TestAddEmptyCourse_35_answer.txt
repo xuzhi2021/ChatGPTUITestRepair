@@ -10,5 +10,3 @@ The updated xpath locator "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/span[1]"
 Therefore, the repaired statement is:
 
 String message = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/span[1]")).getText();
-selection time: 2.5335583686828613
-repair time: 12.605485916137695

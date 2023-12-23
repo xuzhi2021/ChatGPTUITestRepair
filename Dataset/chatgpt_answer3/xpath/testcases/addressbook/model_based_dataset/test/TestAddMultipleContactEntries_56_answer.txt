@@ -6,5 +6,3 @@ Explanation:
 - x, y, width, height: Both elements have similar positions and sizes.
 - isLeaf: Both elements are leaf nodes, indicating that they do not have any children elements.
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[4]/form[1]/input[11]")).sendKeys(list.get(i).getYear());
-selection time: 11.37870168685913
-repair time: 15.21030592918396

@@ -12,5 +12,3 @@ Explanation:
 3. The outdated assertion in the broken statement is "(//INPUT[@type='text'])[11]". Since the selected element is not a text input, the assertion should be updated to match the selected element's properties. 
 
 Repaired statement result: The repaired statement will find the 11th input element in the specified xpath and send the value of list.get(i).getYear() to it.
-selection time: 3.790243148803711
-repair time: 15.937849998474121

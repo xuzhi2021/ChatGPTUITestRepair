@@ -7,5 +7,3 @@ Explanation:
 - Updated the xpath locator to specify the exact path of the element.
 - Removed the duplicated element locator in the assert statement.
 - Updated the expected text to "The email address is not valid".
-selection time: 2.1750071048736572
-repair time: 7.015991449356079

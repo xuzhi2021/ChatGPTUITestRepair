@@ -2,5 +2,3 @@ The most similar element's numericId: 26. Because they share the most similar at
 Repaired statement: driver.findElement(By.xpath("//td[contains(text(),'Manage')]")).click();
 
 Result of repaired statement: This statement finds the element with the text "Manage" within a `td` element and clicks on it.
-selection time: 3.4504072666168213
-repair time: 13.906030654907227

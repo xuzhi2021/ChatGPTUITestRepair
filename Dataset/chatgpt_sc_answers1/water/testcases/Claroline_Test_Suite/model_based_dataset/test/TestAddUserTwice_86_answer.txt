@@ -2,5 +2,3 @@ The most similar element's numericId: 56. Because they share the most similar at
 Selected element: `<div id="claroBody">`
 
 Repaired statement: `assertEquals(driver.findElement(By.id("claroBody")).getText(), "This username is already taken");`
-selection time: 3.990522623062134
-repair time: 4.630192518234253

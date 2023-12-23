@@ -6,5 +6,3 @@ Based on the selected element {numericId=39, id='', name='', class='claroDialogM
 
 Repaired statement: 
 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).click();
-selection time: 3.7099661827087402
-repair time: 15.276525259017944

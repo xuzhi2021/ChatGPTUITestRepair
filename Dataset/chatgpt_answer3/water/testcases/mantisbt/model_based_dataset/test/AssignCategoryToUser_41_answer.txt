@@ -5,5 +5,3 @@ The repaired statement finds the element using the XPath "/html[1]/body[1]/table
 
 Assertion:
 We cannot determine the outdated assertion based on the information provided. Please provide the outdated assertion so that we can update it accordingly.
-selection time: 4.153317213058472
-repair time: 10.363068342208862

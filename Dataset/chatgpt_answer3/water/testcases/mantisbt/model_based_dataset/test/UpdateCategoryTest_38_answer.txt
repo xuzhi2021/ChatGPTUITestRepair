@@ -5,5 +5,3 @@ Explanation:
 Based on the selected element {numericId=33, id='', name='', class='', xpath='/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[8]', text='Manage', tagName='a', linkText='Manage', x=617, y=156, width=52, height=16, isLeaf=true}, the updated locator for the element is "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[8]" which is the same as the previous locator.
 
 The repaired statement does not have an outdated assertion.
-selection time: 7.5120532512664795
-repair time: 15.996915578842163

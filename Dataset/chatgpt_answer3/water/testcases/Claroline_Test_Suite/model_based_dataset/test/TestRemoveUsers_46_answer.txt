@@ -3,5 +3,3 @@ Repaired statement: assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/d
 
 Explanation: 
 The target element selected for repair has a similar xpath to the original xpath, except for the absence of the id 'claroBody'. Therefore, the repaired statement uses the updated xpath to locate the element. The assertion text remains unchanged.
-selection time: 6.316687822341919
-repair time: 8.160773992538452

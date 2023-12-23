@@ -1,4 +1,2 @@
 The most similar element's numericId: 70. Because they share the most similar attributes: xpath, text, x, y, width, height, isLeaf.
 Repaired statement: driver.findElement(By.xpath("/html/body/div[3]/form/table/tbody/tr[2]/td[2]/input")).sendKeys("Category1");
-selection time: 5.7973952293396
-repair time: 7.239264488220215

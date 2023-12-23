@@ -7,5 +7,3 @@ Based on the given candidate element list, the most similar element to the targe
 Since the original xpath locator was not working, we can use the xpath of the selected element '/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]' as the updated locator.
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 3.4459989070892334
-repair time: 18.652172803878784

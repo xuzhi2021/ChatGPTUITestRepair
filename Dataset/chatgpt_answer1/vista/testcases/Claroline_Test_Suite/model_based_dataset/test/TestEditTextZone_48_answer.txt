@@ -10,5 +10,3 @@ Explanation:
 Repaired statement:
 Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]")).getText().trim(),
 "The changes have been carried out correctly textzone_top.inc.html");
-selection time: 6.0137388706207275
-repair time: 38.60870313644409

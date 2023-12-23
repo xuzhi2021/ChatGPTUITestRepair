@@ -5,5 +5,3 @@ Explanation:
 - Updated locator: xpath changed from "//*[@id=\"courseRightContent\"]/div[2]/div" to "/html[1]/body[1]/div[1]/div[1]/div[4]/div[1]/ul[1]/li[4]/a[1]".
 - Removed the unnecessary ".getText()" after the updated locator.
 - Updated the assertion message to "Exercise added".
-selection time: 2.8575944900512695
-repair time: 11.59190559387207

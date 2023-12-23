@@ -3,5 +3,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/sp
 
 Explanation: 
 The repaired statement uses the xpath locator "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]" which matches the element you selected based on its position in the DOM. The outdated assertion of the broken statement, which checks the href attribute, is removed as it is not necessary for clicking the element.
-selection time: 3.486001491546631
-repair time: 15.369999408721924

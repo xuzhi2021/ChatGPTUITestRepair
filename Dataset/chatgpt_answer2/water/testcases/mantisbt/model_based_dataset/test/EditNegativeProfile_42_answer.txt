@@ -6,5 +6,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[2]/form[1]/table[1]/tbody[1]/t
 Repaired assertion:
 
 Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[2]/span[4]/a[1]")).getText(), "Profiles");
-selection time: 2.1383306980133057
-repair time: 9.526085615158081

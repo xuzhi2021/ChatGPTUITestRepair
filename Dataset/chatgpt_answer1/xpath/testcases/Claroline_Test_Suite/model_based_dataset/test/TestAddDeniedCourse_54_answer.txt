@@ -4,5 +4,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/bo
 Explanation: 
 - Updated the XPath locator to match the selected element based on numericId 35.
 - Removed the duplicate getText() method call in the assertion.
-selection time: 2.8978397846221924
-repair time: 6.9799699783325195

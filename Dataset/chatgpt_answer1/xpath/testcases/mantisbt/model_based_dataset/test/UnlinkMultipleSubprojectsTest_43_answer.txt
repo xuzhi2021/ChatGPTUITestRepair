@@ -11,5 +11,3 @@ Therefore, the repaired statement is:
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
 
 This statement will find the element with the exact same XPath as the selected element and click on it.
-selection time: 3.3922910690307617
-repair time: 22.44197392463684

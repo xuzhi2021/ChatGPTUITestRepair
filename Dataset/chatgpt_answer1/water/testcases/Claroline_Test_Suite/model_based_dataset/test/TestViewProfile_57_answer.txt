@@ -6,5 +6,3 @@ Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/
 Explanation: 
 
 The repaired statement uses the repaired locator (xpath) which is based on the selected element. The outdated assertion (assertTrue) has been updated to assertEquals to compare the text value of the element with the expected value "All profiles".
-selection time: 7.5262815952301025
-repair time: 8.636047601699829

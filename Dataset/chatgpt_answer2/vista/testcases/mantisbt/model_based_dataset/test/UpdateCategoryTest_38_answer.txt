@@ -6,5 +6,3 @@ Updated locator: By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]")
 Outdated assertion: "//a[@href='manage_user_page.php']"
 
 Repaired statement result: The repaired statement clicks on the element with the updated locator, which is the first <td> element in the table.
-selection time: 7.8379833698272705
-repair time: 15.735868692398071

@@ -6,5 +6,3 @@ Explanation:
 - Based on my selected element, I have updated the locator of the broken statement to "/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]" which matches the xpath of the selected element.
 - I have removed the outdated assertion as it was not included in the original broken statement.
 - The repaired statement is now "driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]")).click();".
-selection time: 7.560026407241821
-repair time: 49.40384483337402

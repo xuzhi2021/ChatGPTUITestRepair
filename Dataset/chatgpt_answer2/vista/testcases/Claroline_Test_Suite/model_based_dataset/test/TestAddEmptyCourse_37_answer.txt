@@ -6,5 +6,3 @@ String message2 = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/di
 Explanation:
 
 Since the selected element has a similar xpath to the target element, we can replace the xpath in the original statement with the xpath of the selected element.
-selection time: 11.87729525566101
-repair time: 13.271481037139893

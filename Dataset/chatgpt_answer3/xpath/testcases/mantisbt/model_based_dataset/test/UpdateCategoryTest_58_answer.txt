@@ -8,5 +8,3 @@ Additionally, the assertion part of the statement is missing, so assuming that t
 driver.findElement(By.xpath("/html[1]/body[1]/div[6]/a[1]/table[1]/tbody[1]/tr[3]/td[1]")).sendKeys("Category1");
 String actualValue = driver.findElement(By.xpath("/html[1]/body[1]/div[6]/a[1]/table[1]/tbody[1]/tr[3]/td[1]")).getAttribute("value");
 Assert.assertEquals(actualValue, "Category1");
-selection time: 19.820472478866577
-repair time: 22.394829511642456

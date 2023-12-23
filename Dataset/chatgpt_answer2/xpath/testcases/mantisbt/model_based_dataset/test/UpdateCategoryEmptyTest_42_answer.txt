@@ -2,5 +2,3 @@ The most similar element's numericId: 46. Because they share the most similar at
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
 
 Result of repaired statement: Clicks on the "Manage Projects" link.
-selection time: 9.559802532196045
-repair time: 5.180067777633667

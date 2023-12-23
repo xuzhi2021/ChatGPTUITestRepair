@@ -10,5 +10,3 @@ Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/sp
 Result of repaired statement: 
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 9.688377857208252
-repair time: 15.961146354675293

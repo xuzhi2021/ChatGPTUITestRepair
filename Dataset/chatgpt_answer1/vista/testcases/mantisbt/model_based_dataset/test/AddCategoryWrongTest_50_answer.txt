@@ -15,5 +15,3 @@ To repair the broken statement, I updated the locator from By.name("category") t
 
 The repaired statement is: 
 driver.findElement(By.xpath("/html[1]/body[1]/div[3]/form[1]/table[1]/tbody[1]/tr[2]/td[2]/input[1]")).sendKeys("Category1");
-selection time: 5.66880464553833
-repair time: 48.197975397109985

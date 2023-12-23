@@ -6,5 +6,3 @@ In the given candidate element list, the element with numericId=47 has the most 
 
 Repaired statement: 
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 6.100432872772217
-repair time: 21.545462369918823

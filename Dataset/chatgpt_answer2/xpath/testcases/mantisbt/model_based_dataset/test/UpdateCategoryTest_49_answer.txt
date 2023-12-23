@@ -6,5 +6,3 @@ Explanation:
 The repaired statement uses the xpath locator of the selected element to find the input field. This xpath locator is more specific and reliable than using the name locator.
 
 As for the assertion, it seems that there is no outdated assertion in the original statement. Therefore, no changes are required for the assertion part.
-selection time: 3.3919565677642822
-repair time: 9.174919366836548

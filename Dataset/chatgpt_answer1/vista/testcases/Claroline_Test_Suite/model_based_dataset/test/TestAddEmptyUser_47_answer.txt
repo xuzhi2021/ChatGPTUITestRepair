@@ -3,5 +3,3 @@ Repaired statement:
 String actualErrorMessage = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]")).getText();
 String expectedErrorMessage = "You typed two different passwords";
 Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
-selection time: 7.169476747512817
-repair time: 8.621419191360474

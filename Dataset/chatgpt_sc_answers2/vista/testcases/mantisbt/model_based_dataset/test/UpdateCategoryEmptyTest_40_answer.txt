@@ -2,5 +2,3 @@ The most similar element's numericId: 34. Because they share the most similar at
 Selected element: `<a href="manage_user_page.php">`
 
 Repaired statement: `driver.findElement(By.cssSelector("a[href='manage_user_page.php']")).click();`
-selection time: 3.0589935779571533
-repair time: 4.1039721965789795

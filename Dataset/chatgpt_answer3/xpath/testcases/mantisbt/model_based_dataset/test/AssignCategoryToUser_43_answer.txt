@@ -11,5 +11,3 @@ Repaired statement:
 ```java
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
 ```
-selection time: 4.010488986968994
-repair time: 13.128769397735596

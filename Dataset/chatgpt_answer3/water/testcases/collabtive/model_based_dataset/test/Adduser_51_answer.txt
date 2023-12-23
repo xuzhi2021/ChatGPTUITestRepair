@@ -11,5 +11,3 @@ However, it's important to note that the statement is missing an assertion, whic
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/fieldset[1]/div[11]/div[1]/button[1]")).click();
 assert driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/fieldset[1]/div[11]/div[1]/button[1]")).isEnabled();
-selection time: 10.922970056533813
-repair time: 35.76004338264465

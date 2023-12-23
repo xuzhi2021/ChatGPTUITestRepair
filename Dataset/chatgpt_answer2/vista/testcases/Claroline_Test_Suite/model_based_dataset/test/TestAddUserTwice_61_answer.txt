@@ -3,5 +3,3 @@ Repaired statement: driver.findElement(By.xpath("/html/body/div/div[2]/div/div[1
 
 Explanation: 
 The repaired statement replaces the locator of the element with a more accurate XPath locator. The selected element has a similar XPath locator, "/html/body/div/div[2]/div/div[1]/div[1]", which points to the same element on the page. The outdated assertion is not mentioned in the broken statement, so it remains unchanged.
-selection time: 21.158547401428223
-repair time: 145.25161337852478

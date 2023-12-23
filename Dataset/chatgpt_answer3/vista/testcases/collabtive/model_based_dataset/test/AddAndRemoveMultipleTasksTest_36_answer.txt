@@ -2,5 +2,3 @@ The most similar element's numericId: 42. Because they share the most similar at
 Repaired statement:
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]")).click();
-selection time: 8.366389751434326
-repair time: 6.923217296600342

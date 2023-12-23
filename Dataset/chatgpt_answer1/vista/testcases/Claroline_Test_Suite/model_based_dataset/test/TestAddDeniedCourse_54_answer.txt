@@ -4,5 +4,3 @@ Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/
 
 Explanation: 
 The repaired statement uses the XPath locator "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]" to locate the element with the text "You have just created the course website : 225". This locator is based on the selected element, which has a similar xpath value. Additionally, the outdated assertion has been updated to the correct format.
-selection time: 4.421003818511963
-repair time: 19.540343523025513

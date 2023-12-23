@@ -7,5 +7,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).cli
 String expectedMessage = "The new user has been successfully created";
 String actualMessage = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText();
 assertEquals(expectedMessage, actualMessage);
-selection time: 2.8775014877319336
-repair time: 10.172499895095825

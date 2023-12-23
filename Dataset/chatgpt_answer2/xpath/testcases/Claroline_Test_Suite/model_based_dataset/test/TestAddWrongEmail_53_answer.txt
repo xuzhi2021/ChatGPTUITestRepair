@@ -8,5 +8,3 @@ Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/
 Explanation: 
 
 The repaired statement updates the XPath locator to select the element with the specified text "The email address is not valid". The outdated assertion is removed and replaced with the updated locator.
-selection time: 2.7200329303741455
-repair time: 6.530030250549316

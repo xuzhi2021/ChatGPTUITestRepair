@@ -6,5 +6,3 @@ Updated locator: By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")
 Outdated assertion: @href='manage_proj_page.php'
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 3.7899928092956543
-repair time: 9.884992837905884

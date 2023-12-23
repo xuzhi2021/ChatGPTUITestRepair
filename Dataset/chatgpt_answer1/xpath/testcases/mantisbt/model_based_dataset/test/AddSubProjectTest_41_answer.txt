@@ -6,5 +6,3 @@ Explanation:
 - However, the provided candidate element list does not have any element with a similar attribute.
 - The repaired statement uses the selected element from the candidate list as the new XPath locator.
 - The repaired statement clicks on the element that has the same XPath as the selected element.
-selection time: 3.497542142868042
-repair time: 12.19659948348999

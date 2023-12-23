@@ -10,5 +10,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click(
 ```
 
 Result of the repaired statement: The script will find the element with the XPath locator and click on it.
-selection time: 12.101958990097046
-repair time: 18.555963039398193

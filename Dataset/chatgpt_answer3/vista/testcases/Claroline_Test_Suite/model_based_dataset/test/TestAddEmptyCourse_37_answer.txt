@@ -7,5 +7,3 @@ Assert.assertEquals(message2, "Course code needed");
 Explanation: 
 - The updated locator uses the full xpath of the element that was selected by the repair tool.
 - The outdated assertion is replaced with the correct assertion to check if the text of the element is "Course code needed".
-selection time: 22.810537576675415
-repair time: 10.197324514389038

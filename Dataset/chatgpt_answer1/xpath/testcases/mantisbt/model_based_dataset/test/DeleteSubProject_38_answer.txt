@@ -11,5 +11,3 @@ Updated locator: By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")
 Updated assertion: element.click();
 
 Result of repaired statement: The web UI test script will locate the element with the updated XPath and perform a click action on it.
-selection time: 7.83244514465332
-repair time: 8.925033569335938

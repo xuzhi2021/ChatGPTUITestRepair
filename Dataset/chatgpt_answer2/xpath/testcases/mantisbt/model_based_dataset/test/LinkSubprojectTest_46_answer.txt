@@ -15,5 +15,3 @@ Explanation:
 - The updated statement finds the element using the updated XPath.
 - The assertion checks if the element is displayed and enabled before clicking on it. If the element is not displayed or not enabled, the assertion will fail.
 - Then, the element is clicked using the `click()` method.
-selection time: 3.8718574047088623
-repair time: 24.470839500427246

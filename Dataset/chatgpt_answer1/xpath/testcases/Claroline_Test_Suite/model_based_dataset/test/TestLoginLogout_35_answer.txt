@@ -4,5 +4,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/bo
 Explanation: 
 - The locator in the broken statement is using the ID attribute, but the selected element does not have an ID. So, the xpath locator should be used instead.
 - The outdated assertion method `assertTrue` is replaced with `assertEquals` to compare the text value of the selected element with the expected value "Authentication".
-selection time: 4.0087151527404785
-repair time: 9.231650352478027

@@ -22,5 +22,3 @@ String message = driver.findElement(By.className("backlogFailure")).getText();
 ```
 
 This statement uses the class name "backlogFailure" to locate the element, which is the most similar property to the selected element's class.
-selection time: 5.651630401611328
-repair time: 13.745640277862549

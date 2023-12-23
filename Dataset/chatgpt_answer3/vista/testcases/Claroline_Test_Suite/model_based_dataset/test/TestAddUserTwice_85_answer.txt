@@ -5,5 +5,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]")).cli
 
 Explanation:
 After selecting the most similar element, the repaired statement uses the full xpath to locate the element. This ensures a more specific and accurate locator.
-selection time: 6.086299180984497
-repair time: 15.321892738342285

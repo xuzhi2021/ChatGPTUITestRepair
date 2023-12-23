@@ -8,5 +8,3 @@ Updated locator: By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/span[2]"
 Outdated assertion: None specified.
 
 Result of repaired statement: The repaired statement will retrieve the text from the element with the xpath "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/span[2]".
-selection time: 3.24910306930542
-repair time: 11.15100622177124

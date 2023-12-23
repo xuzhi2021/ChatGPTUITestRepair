@@ -7,5 +7,3 @@ Explanation:
 - The expected value remains the same: "You have just created the course website : 225".
 
 Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]")).getText(), "You have just created the course website : 225");
-selection time: 8.899001836776733
-repair time: 13.48900318145752

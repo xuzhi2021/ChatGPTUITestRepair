@@ -6,5 +6,3 @@ Explanation:
 - The locator has been updated to the correct XPath of the selected element: "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]".
 - The assertion has been updated to use "assertEquals" instead of "assertTrue" to compare the exact text value.
 - ".trim()" has been added to remove any leading or trailing white spaces from the text.
-selection time: 6.316606283187866
-repair time: 43.69384002685547

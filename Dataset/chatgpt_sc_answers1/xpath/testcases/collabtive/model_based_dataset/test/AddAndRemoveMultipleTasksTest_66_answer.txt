@@ -1,2 +1,1 @@
 The most similar element's numericId: 42. Because they share the most similar attributes: class, xpath, tagName, linkText, x, y, width, height, and isLeaf.
-selection time: 4.630978345870972

@@ -4,5 +4,3 @@ Repaired statement: assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/d
 Explanation: 
 - The outdated assertion is updated with the selected element's XPath locator "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]".
 - The selected element's text "The new user has been sucessfully created" is used as the expected value in the assertion.
-selection time: 4.410029888153076
-repair time: 8.714998006820679

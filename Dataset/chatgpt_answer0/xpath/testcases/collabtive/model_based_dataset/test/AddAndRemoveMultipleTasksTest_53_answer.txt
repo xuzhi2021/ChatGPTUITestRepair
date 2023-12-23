@@ -6,5 +6,3 @@ Explanation:
 - The selected element has a similar XPath to the target element. 
 - The XPath has been updated to match the selected element's XPath. 
 - The outdated assertion in the broken statement has been removed as it is not relevant to the repaired statement.
-selection time: 7.326002836227417
-repair time: 7.666000127792358

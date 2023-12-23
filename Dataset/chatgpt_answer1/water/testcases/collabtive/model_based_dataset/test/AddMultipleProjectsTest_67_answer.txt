@@ -3,5 +3,3 @@ Repaired statement:
 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/fieldset[1]/div[4]/input[1]")).click();
 
 The repaired statement locates the element using an updated XPath locator based on the selected element.
-selection time: 3.0964434146881104
-repair time: 7.895578145980835

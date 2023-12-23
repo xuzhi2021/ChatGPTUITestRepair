@@ -6,5 +6,3 @@ Updated Locator: By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")
 Updated Assertion: Assert.assertTrue(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).isDisplayed());
 
 Result of Repaired Statement: The repaired statement clicks on the element with the locator "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]". The updated assertion checks if the element is displayed.
-selection time: 3.603945732116699
-repair time: 14.15577507019043

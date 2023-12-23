@@ -5,5 +5,3 @@ Explanation:
 The repaired statement uses the XPath locator "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]" to find the element. This XPath is based on the selected element that is similar to the target element.
 
 Note: The outdated assertion of the broken statement is not mentioned, so it remains unchanged.
-selection time: 10.694072484970093
-repair time: 11.097317695617676

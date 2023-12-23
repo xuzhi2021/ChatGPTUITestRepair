@@ -6,5 +6,3 @@ Updated locator: By.xpath("/html/body/div/div[2]/div/div")
 Outdated assertion: None (since click action is not an assertion)
 
 Repaired statement: driver.findElement(By.xpath("/html/body/div/div[2]/div/div")).click();
-selection time: 2.922996759414673
-repair time: 7.501995086669922

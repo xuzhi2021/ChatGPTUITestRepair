@@ -6,5 +6,3 @@ Explanation:
 The repaired statement replaces the xpath locator with a more specific and reliable xpath locator that matches the selected element. The updated locator ensures that the element can be uniquely identified and interacted with.
 
 Additionally, the repaired statement only focuses on finding the element and clicking on it. Any assertion related to the success message mentioned in the selected element needs to be added separately.
-selection time: 3.903001070022583
-repair time: 8.103997468948364

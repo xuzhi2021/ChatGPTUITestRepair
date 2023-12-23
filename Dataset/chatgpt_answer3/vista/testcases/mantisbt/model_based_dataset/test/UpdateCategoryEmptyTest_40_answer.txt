@@ -14,5 +14,3 @@ Repaired statement explanation:
 
 Repaired statement: 
 driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]//a[contains(text(),'Manage')]")).click();
-selection time: 3.5451910495758057
-repair time: 22.00327706336975

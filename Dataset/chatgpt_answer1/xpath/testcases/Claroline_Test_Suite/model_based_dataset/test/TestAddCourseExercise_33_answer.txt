@@ -4,5 +4,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/
 Explanation: I updated the xpath locator of the broken statement to match the selected element's xpath. 
 
 Additionally, since the repaired statement is performing a click action on the element, there is no assertion involved.
-selection time: 3.1560003757476807
-repair time: 19.578201055526733

@@ -6,5 +6,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[3]/form[1]/table[1]/tbody[1]/t
 Updated locator: By.xpath("/html[1]/body[1]/div[3]/form[1]/table[1]/tbody[1]/tr[2]/td[2]/input[1]")
 
 Updated assertion: "Test"
-selection time: 2.783604383468628
-repair time: 8.622568368911743

@@ -13,5 +13,3 @@ Explanation:
 Result of repaired statement:
 
 The repaired statement will compare the text of the selected element with the expected value `"This username is already taken"`.
-selection time: 2.6818339824676514
-repair time: 9.894447326660156

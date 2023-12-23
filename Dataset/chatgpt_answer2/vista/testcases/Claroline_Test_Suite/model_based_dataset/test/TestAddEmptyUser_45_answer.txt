@@ -7,5 +7,3 @@ Explanation:
 - The repaired statement also updates the outdated assertion to check the text of the selected element.
 
 Result of repaired statement: The repaired statement verifies that the error message "You left some required fields empty" is displayed correctly on the web page.
-selection time: 4.081468105316162
-repair time: 18.216899633407593

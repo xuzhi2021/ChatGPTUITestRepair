@@ -3,5 +3,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[6]/a[1]/ta
 
 Explanation: 
 The selected element has a similar xpath value as the target element. Therefore, I updated the locator to use the xpath instead of the name. The updated statement should find the input element using the xpath and then send the keys "Category1" to it.
-selection time: 12.548052310943604
-repair time: 13.025540113449097

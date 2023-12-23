@@ -10,5 +10,3 @@ Instead of asserting the presence of the element, we can assert the text value o
 String expectedText = "My Account";
 String actualText = driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")).getText();
 Assert.assertEquals(actualText, expectedText);
-selection time: 3.071932077407837
-repair time: 22.09089970588684

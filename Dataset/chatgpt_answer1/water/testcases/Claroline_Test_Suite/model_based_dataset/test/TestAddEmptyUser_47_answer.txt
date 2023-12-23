@@ -8,5 +8,3 @@ Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/
 Explanation: 
 
 The repaired statement uses the xpath locator based on the selected element with the xpath `/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]`. The assertion checks if the text of the selected element is equal to "You typed two different passwords".
-selection time: 2.942146062850952
-repair time: 9.574624061584473

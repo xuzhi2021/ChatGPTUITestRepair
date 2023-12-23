@@ -8,5 +8,3 @@ Explanation:
 - Updated xpath locator to match the selected element: "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]".
 - Removed the attribute condition "href='manage_proj_page.php'" since it was not present in the selected element.
 - No assertion was provided in the broken statement, so no outdated assertion needs to be updated.
-selection time: 3.5599944591522217
-repair time: 8.96745777130127

@@ -9,5 +9,3 @@ Based on the selected element with the following properties:
 - Text: Desktop
 
 The repaired statement uses the XPath locator of the selected element to identify the element to be clicked. The outdated assertion in the original statement has not been updated as it was not identified in the given information.
-selection time: 3.727430582046509
-repair time: 12.682188272476196

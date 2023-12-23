@@ -8,5 +8,3 @@ Based on the selected element {numericId=48, id='', name='', class='', xpath='/h
 The repaired statement uses the xpath "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]" to locate the element and then performs a click action on it.
 
 Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 4.6293346881866455
-repair time: 21.935990810394287

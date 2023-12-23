@@ -6,5 +6,3 @@ String message2 = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/di
 Explanation: I have updated the XPath locator in the repaired statement to match the element you chose (numericId=38, id='', name='', class='backlogFailure', xpath='/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/span[2]', text='Course code needed', tagName='span', linkText='', x=60, y=175, width=119, height=15, isLeaf=true). 
 
 So the repaired statement would find the element with the updated XPath locator and retrieve its text.
-selection time: 3.8097734451293945
-repair time: 16.919140577316284

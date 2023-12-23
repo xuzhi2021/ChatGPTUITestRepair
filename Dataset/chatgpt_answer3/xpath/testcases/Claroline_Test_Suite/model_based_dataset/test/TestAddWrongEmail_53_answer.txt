@@ -5,5 +5,3 @@ Explanation:
 The updated locator in the repaired statement uses the XPath "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]" to locate the element. 
 
 The outdated assertion in the broken statement has been removed in the repaired statement.
-selection time: 2.686673879623413
-repair time: 9.106226444244385

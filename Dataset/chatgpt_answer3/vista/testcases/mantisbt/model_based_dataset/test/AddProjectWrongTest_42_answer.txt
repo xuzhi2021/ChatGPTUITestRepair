@@ -11,5 +11,3 @@ Additionally, there is no need for the assertion in the original statement. The 
 Repaired statement:
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")).click();
-selection time: 6.060000896453857
-repair time: 29.544001579284668

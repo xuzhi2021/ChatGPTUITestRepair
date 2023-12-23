@@ -5,5 +5,3 @@ Explanation:
 Based on the selected element {numericId=39, id='', name='', class='claroDialogMsg msgSuccess', xpath='/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]', text='The course has been successfully deleted', tagName='div', linkText='', x=40, y=158, width=876, height=18, isLeaf=true}, the updated XPath locator to locate the similar element would be "/html/body/div/div[2]/div/div[1]/div".
 
 The repaired statement is using the updated XPath locator to find the element and then perform the click action.
-selection time: 2.614532232284546
-repair time: 13.093463659286499

@@ -11,4 +11,3 @@ The location attribute of element 87 (x=519, y=261) is the most similar to the t
 The size attribute of element 87 (width=506, height=36) is the most similar to the target element's size (width=85, height=16). 
 
 The isLeaf attribute of element 87 (true) is the most similar to the target element's isLeaf (true).
-selection time: 26.025790691375732

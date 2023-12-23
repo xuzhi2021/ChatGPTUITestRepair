@@ -12,5 +12,3 @@ Repaired statement:
 WebElement element = driver.findElement(By.xpath("/html/body/div/div[2]/div/div"));
 element.click();
 Assert.assertTrue(element.isDisplayed());
-selection time: 3.219011068344116
-repair time: 20.398768424987793

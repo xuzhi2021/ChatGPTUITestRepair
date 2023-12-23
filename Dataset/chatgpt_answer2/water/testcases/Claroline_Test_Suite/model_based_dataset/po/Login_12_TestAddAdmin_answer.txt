@@ -2,5 +2,3 @@ The most similar element's numericId: 2. Because they share the most similar att
 Repaired statement:
 
 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/button[@type=\"submit\"]")).click();
-selection time: 2.704054832458496
-repair time: 2.9119505882263184

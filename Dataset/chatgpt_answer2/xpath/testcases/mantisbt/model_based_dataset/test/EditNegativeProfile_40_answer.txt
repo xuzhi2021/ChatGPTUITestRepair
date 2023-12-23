@@ -4,5 +4,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody
 Updated locator: By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")
 
 Based on the selected element, the repaired statement locates the "My Account" link using the xpath provided. The outdated assertion in the broken statement does not need to be updated as it simply clicks on the element.
-selection time: 3.82755184173584
-repair time: 9.448077917098999

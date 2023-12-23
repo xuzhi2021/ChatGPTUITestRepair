@@ -8,5 +8,3 @@ driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[4]
 Explanation: 
 
 The repaired statement uses the provided element's XPath to locate the element and click on it.
-selection time: 3.0538313388824463
-repair time: 9.310179710388184

@@ -3,5 +3,3 @@ Repaired statement: driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/sp
 
 Explanation: 
 Based on the selected element, the repaired statement uses the XPath locator "/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]" to find the element with the text "Manage Projects". The outdated assertion in the broken statement, which checks if the element's href attribute is equal to "manage_proj_page.php", is removed as it is not necessary for the repair.
-selection time: 6.07112717628479
-repair time: 14.326013326644897

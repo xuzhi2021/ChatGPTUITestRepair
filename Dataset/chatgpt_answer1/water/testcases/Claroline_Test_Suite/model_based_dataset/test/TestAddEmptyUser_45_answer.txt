@@ -5,5 +5,3 @@ Explanation:
 - The updated locator is changed to the full XPath of the element.
 - The outdated assertion is fixed by replacing the outdated locator with the updated locator.
 - The result of the repaired statement is the same as the broken statement.
-selection time: 2.7760000228881836
-repair time: 9.031465291976929

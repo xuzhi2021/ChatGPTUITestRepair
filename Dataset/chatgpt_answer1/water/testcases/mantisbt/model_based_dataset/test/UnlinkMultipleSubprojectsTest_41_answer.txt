@@ -10,5 +10,3 @@ Assert.assertTrue(driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1
 ```
 
 This assertion checks if the element is displayed on the page before performing the click action.
-selection time: 7.845029354095459
-repair time: 15.51076626777649

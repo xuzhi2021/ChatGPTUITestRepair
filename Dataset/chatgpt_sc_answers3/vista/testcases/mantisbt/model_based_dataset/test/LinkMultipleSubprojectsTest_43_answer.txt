@@ -14,5 +14,3 @@ driver.findElement(By.linkText("Manage Users")).click();
 ```
 
 The repaired statement uses the `By.linkText` locator with the text "Manage Users" to find and click the element.
-selection time: 3.921067237854004
-repair time: 11.665955781936646

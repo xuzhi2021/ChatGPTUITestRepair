@@ -8,5 +8,3 @@ The outdated assertion that checks the href attribute is removed as it is not ne
 
 Repaired statement: 
 driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")).click();
-selection time: 2.957002878189087
-repair time: 13.029186248779297

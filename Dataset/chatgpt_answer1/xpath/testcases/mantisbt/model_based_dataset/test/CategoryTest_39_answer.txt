@@ -7,5 +7,3 @@ Repaired statement with updated locator and outdated assertion:
 
 WebElement manageProjectsLink = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]"));
 manageProjectsLink.click();
-selection time: 4.343502044677734
-repair time: 13.898321390151978

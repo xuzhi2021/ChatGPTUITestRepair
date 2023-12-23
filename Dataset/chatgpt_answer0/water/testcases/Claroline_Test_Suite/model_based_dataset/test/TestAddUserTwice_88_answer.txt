@@ -7,5 +7,3 @@ The outdated assertion remains the same, which checks if the text of the element
 
 Repaired statement: 
 assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]")).getText(), "New users will receive an e-mail with their username and password");
-selection time: 2.4659969806671143
-repair time: 15.310002565383911

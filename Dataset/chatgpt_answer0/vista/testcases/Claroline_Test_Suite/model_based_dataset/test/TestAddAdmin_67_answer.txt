@@ -8,5 +8,3 @@ Explanation:
 - I have updated the XPath locator to "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]" based on the selected element.
 - I have stored the text of the selected element in a variable called "successMessage".
 - Then, I have updated the assertion to compare the "successMessage" variable with the expected text "The new user has been successfully created".
-selection time: 5.541414737701416
-repair time: 18.42615509033203

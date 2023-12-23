@@ -4,5 +4,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html/body/
 Explanation:
 - Updated the XPath locator to match the selected element: "/html/body/div/div[2]/div/div[1]/div[1]"
 - Updated the expected text to "Exercise added"
-selection time: 2.8585011959075928
-repair time: 10.267051219940186

@@ -4,5 +4,3 @@ Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/bo
 Explanation:
 - The outdated assertion method `assertTrue` is replaced with `assertEquals` to compare the text values.
 - The locator is updated to the selected element's XPath '/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]'.
-selection time: 7.532142400741577
-repair time: 24.25724720954895

@@ -4,5 +4,3 @@ Repaired statement:
 String actualMessage = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText();
 String expectedMessage = "Category modified";
 Assert.assertEquals(actualMessage, expectedMessage);
-selection time: 8.896787166595459
-repair time: 5.297970771789551

@@ -8,5 +8,3 @@ Explanation:
 - Updated the xpath locator with a more specific and absolute xpath expression.
 - Removed the extra closing parenthesis ")" at the end of the statement.
 - Updated the expected text value to "Category modified".
-selection time: 3.0939159393310547
-repair time: 8.623183965682983

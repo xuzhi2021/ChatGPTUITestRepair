@@ -22,5 +22,3 @@ Based on this element, the repaired statement will use the updated xpath to loca
 Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText(), "The email address is not valid");
 
 This updated statement should correctly verify that the displayed error message is "The email address is not valid".
-selection time: 2.888129949569702
-repair time: 40.966753244400024

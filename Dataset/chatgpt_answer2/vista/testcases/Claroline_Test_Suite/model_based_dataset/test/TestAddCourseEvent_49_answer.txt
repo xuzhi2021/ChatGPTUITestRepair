@@ -6,5 +6,3 @@ Explanation:
 - The outdated assertion is removed and replaced with the expected text: "Event added to the agenda.".
 
 Repaired statement: Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]")).getText(), "Event added to the agenda.");
-selection time: 3.753854751586914
-repair time: 20.656041145324707

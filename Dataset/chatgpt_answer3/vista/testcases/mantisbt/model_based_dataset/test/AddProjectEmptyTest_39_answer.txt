@@ -6,5 +6,3 @@ Explanation: The repaired statement uses the xpath locator "/html[1]/body[1]/div
 Updated assertion: Instead of using the outdated assertion "[@href='manage_proj_page.php']", the updated assertion should be ".getText().equals("Manage Projects")". This assertion checks if the element's text is equal to "Manage Projects".
 
 Result of repaired statement: The repaired statement finds the element with the xpath locator and clicks on it.
-selection time: 4.973968982696533
-repair time: 38.41139841079712

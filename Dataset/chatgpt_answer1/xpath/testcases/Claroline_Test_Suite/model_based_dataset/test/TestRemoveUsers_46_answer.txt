@@ -8,5 +8,3 @@ Explanation:
 Result of the repaired statement: 
 
 assertEquals(driver.findElement(By.xpath("/html/body/div/div[2]/div/div[1]")).getText(), "Deletion of the user was done sucessfully");
-selection time: 4.4071478843688965
-repair time: 9.637712001800537

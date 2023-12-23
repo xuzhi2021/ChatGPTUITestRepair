@@ -11,5 +11,3 @@ Based on the given candidate element list, the element with the most similar loc
 
 Repaired statement: 
 driver.findElement(By.xpath("//a[contains(text(),'Manage User')]")).click();
-selection time: 3.306042194366455
-repair time: 10.339995384216309

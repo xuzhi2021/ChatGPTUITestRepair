@@ -7,5 +7,3 @@ Explanation:
 
 Result:
 The repaired statement will assert that the text value of the element '/html/body/div[2]/p[1]' is equal to "Unknown user".
-selection time: 2.875378370285034
-repair time: 19.470153331756592

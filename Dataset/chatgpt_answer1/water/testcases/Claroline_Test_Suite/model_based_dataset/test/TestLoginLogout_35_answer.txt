@@ -6,5 +6,3 @@ Explanation:
 - Removed the outdated assertion to compare the text with the updated locator.
 
 Result of repaired statement: Assert.assertTrue(driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]")).getText().equals("Authentication"));
-selection time: 2.872002124786377
-repair time: 14.37343692779541

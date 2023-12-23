@@ -4,5 +4,3 @@ String message = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div
 
 Explanation: 
 Based on the selected element, the updated locator is the full XPath of the div element. The outdated assertion is removed since getText() method already returns the text content of the element.
-selection time: 2.230766773223877
-repair time: 6.3724939823150635

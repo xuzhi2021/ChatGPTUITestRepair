@@ -8,5 +8,3 @@ Repaired statement:
 driver.findElement(By.xpath("/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/a[9]")).click();
 
 Updated assertion: The repaired statement does not include any assertion. If needed, an assertion can be added after the click action to verify the expected result.
-selection time: 3.690152883529663
-repair time: 40.05831336975098

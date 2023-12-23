@@ -13,5 +13,3 @@ Repaired statement with explicit wait:
 WebDriverWait wait = new WebDriverWait(driver, 10);
 WebElement manageProjectLink = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html[1]/body[1]/div[2]/p[1]/span[2]/a[1]")));
 manageProjectLink.click();
-selection time: 17.041371822357178
-repair time: 27.00631356239319

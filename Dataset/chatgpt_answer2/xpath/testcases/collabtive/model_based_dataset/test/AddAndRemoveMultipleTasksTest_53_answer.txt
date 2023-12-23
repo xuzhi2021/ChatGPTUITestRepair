@@ -6,5 +6,3 @@ Based on the selected element {numericId=42, id='', name='', class='active', xpa
 
 Result of repaired statement: 
 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]")).click();
-selection time: 2.53499174118042
-repair time: 15.877527952194214

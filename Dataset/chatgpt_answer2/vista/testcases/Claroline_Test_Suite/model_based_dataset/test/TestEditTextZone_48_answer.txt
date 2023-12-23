@@ -7,5 +7,3 @@ WebElement element = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]
 String actualText = element.getText();
 Assert.assertEquals(actualText, expectedText);
 ```
-selection time: 5.1496007442474365
-repair time: 36.23494791984558
