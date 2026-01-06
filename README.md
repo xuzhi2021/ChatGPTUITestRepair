@@ -14,11 +14,26 @@ We present the first study that investigates the feasibility of using prior Web 
 
 #### Element Extraction
 
-Element extraction and candidate selection are finished with adapted UITestFix in folder ''Extraction''.
+Element extraction and candidate selection are finished with adapted UITestFix [28] in folder ''Extraction''.
 
-Running old web UI test scripts with UITestFix on old webpage can store the information of each element mentioned in each statement.
+Setup: 
 
-Then run old tests on the new webpage. UITestFix will catch  exception when breakage happens. It will also extract elements from new webpage. 
+1. Build and run the web projects locally
+   
+2. Use the Ajc compiler for the "Extraction" Java project to run the test cases
+   
+3. Download a Chrome driver with the same version as your local Chrome browser. Put the driver into the folder Extraction/WebUIAutoRepair/driver. Specify the version in Extraction/WebUIAutoRepair/src/main/resources/config.properties(e.g., chrome_version=119)
+
+
+How to run:
+
+After setting up, run testcases (e.g., Extraction/WebUIAutoRepair/src/main/java/testcases/Claroline_Test_Suite/model_based_dataset/test/TestAddAdmin.java) on old web pages first and then on new web pages, and the framework will collect broken statements and information for the corresponding web elements.
+
+
+Extraction/WebUIAutoRepair/src/main/resources/config.properties:
+
+Specify the Chrome driver version on line 5, web project version (old or new) on line 2, algorithm (xpath (edit distance), vista2, water2, webevo, sftm2023) on line 8.
+
 
 #### Selecting Candidate 
 
