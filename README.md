@@ -22,7 +22,7 @@ Setup:
    
 2. Use the Ajc compiler for the "Extraction" Java project to run the test cases
    
-3. Download a Chrome driver with the same version as your local Chrome browser. Put the driver into the folder Extraction/WebUIAutoRepair/driver. Specify the version in Extraction/WebUIAutoRepair/src/main/resources/config.properties(e.g., chrome_version=119)
+3. Download a ChromeDriver with the same version as your local Chrome browser. Put the driver into the folder Extraction/WebUIAutoRepair/driver. Specify the version in Extraction/WebUIAutoRepair/src/main/resources/config.properties(e.g., chrome_version=119)
 
 
 How to run:
