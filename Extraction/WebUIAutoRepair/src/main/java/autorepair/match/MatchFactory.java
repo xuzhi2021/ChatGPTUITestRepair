@@ -60,7 +60,7 @@ public class MatchFactory {
             case "sftm2023":
                 return matchBySFTM2023(oldStateMachine, newStateMachine, oldEvent, driver);
             case "xpath":
-                return matchByEditDistance(oldStateMachine,oldEvent,newStateMachine, driver);    
+                return matchByEditDistance(oldStateMachine,oldEvent,newStateMachine, driver);  //Implemented on line 71 in this file, instead of under the package autorepair.match.
 //            case "chatGPT":
 //                return matchByChatGPT(oldStateMachine, newStateMachine, oldEvent);
             default:
