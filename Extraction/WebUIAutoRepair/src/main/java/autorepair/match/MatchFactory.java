@@ -96,7 +96,7 @@ public class MatchFactory {
                 return Integer.compare(dist1, dist2);//smallest come first
             }
         });
-
+        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "xpath");
         PreDomNodeInfo match=newPreDomNodeInfoList.get(0);
         String re1=match.getXpath();
         return verifyXPath(preDomNodeInfo, re1, oldStateMachine, newStateMachine, oldEvent, driver);
@@ -184,13 +184,14 @@ public class MatchFactory {
         String packageClassName = signature.replace(".", "\\");//testcases.Claroline_Test_Suite.model_based_dataset.po.Login
 
         String result = VISTA2.retrieveDomNode(oldFullScreenPath, newFullScreenPath, preDomNodeInfo, driver);
-        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, driver);
-        storeGroundTruth(result, oldStateMachine, newStateMachine, oldEvent);
-//        String verifiedResult = verifyXPath(preDomNodeInfo, result, oldStateMachine, newStateMachine, oldEvent,driver);
+        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "vista");
+//        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, driver);
+//        storeGroundTruth(result, oldStateMachine, newStateMachine, oldEvent);
+        String verifiedResult = verifyXPath(preDomNodeInfo, result, oldStateMachine, newStateMachine, oldEvent,driver);
 //
-//        return verifiedResult;
+        return verifiedResult;
 //
-        return result;
+//        return result;
     }
 
     public static String verifyXPath(PreDomNodeInfo old, String result, StateMachineImpl oldStateMachine, StateMachineImpl newStateMachine,
@@ -203,7 +204,7 @@ public class MatchFactory {
         String packageClassName = signature.replace(".", "\\");//testcases.Claroline_Test_Suite.model_based_dataset.po.Login
         //String className=oldEvent.getCodeLine().split(":")[0];
         System.out.println("broken code lien:" + oldEvent.getCodeLine());
-        //storeBrokenStatement(result, oldStateMachine, newStateMachine, oldEvent);
+        storeBrokenStatement(result, oldStateMachine, newStateMachine, oldEvent);// if you already stored, comment this
         String ResultPath = "\\ground_truth\\" + packageClassName + "_" + lineNum + ".txt";
         String gt = null;
         int gtID = -1;
@@ -238,7 +239,7 @@ public class MatchFactory {
         if (ground_truth != null)
             return ground_truth;
         else {
-            System.out.println("没有ground truth");
+            System.out.println("no existing ground truth");
             return result;
         }
     }
@@ -1248,8 +1249,8 @@ public class MatchFactory {
         lineNum = Integer.parseInt(oldEvent.getCodeLine().split(":")[1]);
         System.out.println("line number:" + lineNum);
         String packageClassName = signature.replace(".", "\\");//testcases.Claroline_Test_Suite.model_based_dataset.po.Login
-        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, newStateMachine.getDriver());
-
+//        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, newStateMachine.getDriver());
+        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "water");
         WebElement webElement = WATER2.retrieveWebElementFromDOMInfo(newStateMachine.getDriver(),
                 preDomNodeInfo, oldHtml, newPreDomNodeInfoList);
         if (webElement != null) {
