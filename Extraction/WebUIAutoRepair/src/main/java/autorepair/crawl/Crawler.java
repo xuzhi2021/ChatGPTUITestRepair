@@ -87,49 +87,49 @@ public class Crawler {
         goToTargetState(stateMachine.getTargetStateVertex());
     }
 
-    public void crawlBydelta(StateMachineImpl oldStateMachine, Event oldEvent) throws Exception {
-        System.out.println("start");
-        System.out.println(stateFlowGraph);
-
-        long start = System.currentTimeMillis();
-        long current = System.currentTimeMillis();
-        StateVertex stateVertex = stateFlowGraph.addStateVertex(stateMachine.getDriver(), stateMachine.getSavePath());
-        extractElementByStateVertexDelta(oldStateMachine, oldStateMachine.getStateFlowGraph().getStateVertexById(oldEvent.getSourceVertexId()), stateVertex);
-        while (((stateFlowGraph.getAllState().size() - initStateNumber) < maxStateNumber)
-                && ((current - start) < 1000000) && (!candidateEventQueue.isEmpty())) {
-            CandidateEvent candidateEvent = candidateEventQueue.poll();
-
-            goToTargetState(candidateEvent.getSourceStateVertex());
-
-            try {
-                candidateEvent.execute(stateMachine.getDriver());
-            } catch (NoSuchElementException noSuchElementException) {
-                noSuchElementException.printStackTrace();
-            }
-
-            StateVertex newState = stateFlowGraph.addStateVertex(stateMachine.getDriver(), stateMachine.getSavePath());
-            Event event = stateFlowGraph.addEvent(candidateEvent.getSourceStateVertex(), newState,
-                    candidateEvent, candidateEvent.getElementId());
-            System.out.println("add Event:" + event);
-            extractElementByStateVertex(newState);
-            closeMoreWindow(stateMachine.getDriver());
-
-            current = System.currentTimeMillis();
-            if (candidateEventQueue.isEmpty()) {
-                System.out.println("=========null");
-            }
-            if (((stateFlowGraph.getAllState().size() - initStateNumber) >= maxStateNumber)) {
-                System.out.println("====state size full");
-            }
-            if (((current - start) >= 1000000)) {
-                System.out.println("====timeout");
-            }
-        }
-
-        System.out.println("over");
-        System.out.println(stateFlowGraph);
-        goToTargetState(stateMachine.getTargetStateVertex());
-    }
+//    public void crawlBydelta(StateMachineImpl oldStateMachine, Event oldEvent) throws Exception {
+//        System.out.println("start");
+//        System.out.println(stateFlowGraph);
+//
+//        long start = System.currentTimeMillis();
+//        long current = System.currentTimeMillis();
+//        StateVertex stateVertex = stateFlowGraph.addStateVertex(stateMachine.getDriver(), stateMachine.getSavePath());
+//        extractElementByStateVertexDelta(oldStateMachine, oldStateMachine.getStateFlowGraph().getStateVertexById(oldEvent.getSourceVertexId()), stateVertex);
+//        while (((stateFlowGraph.getAllState().size() - initStateNumber) < maxStateNumber)
+//                && ((current - start) < 1000000) && (!candidateEventQueue.isEmpty())) {
+//            CandidateEvent candidateEvent = candidateEventQueue.poll();
+//
+//            goToTargetState(candidateEvent.getSourceStateVertex());
+//
+//            try {
+//                candidateEvent.execute(stateMachine.getDriver());
+//            } catch (NoSuchElementException noSuchElementException) {
+//                noSuchElementException.printStackTrace();
+//            }
+//
+//            StateVertex newState = stateFlowGraph.addStateVertex(stateMachine.getDriver(), stateMachine.getSavePath());
+//            Event event = stateFlowGraph.addEvent(candidateEvent.getSourceStateVertex(), newState,
+//                    candidateEvent, candidateEvent.getElementId());
+//            System.out.println("add Event:" + event);
+//            extractElementByStateVertex(newState);
+//            closeMoreWindow(stateMachine.getDriver());
+//
+//            current = System.currentTimeMillis();
+//            if (candidateEventQueue.isEmpty()) {
+//                System.out.println("=========null");
+//            }
+//            if (((stateFlowGraph.getAllState().size() - initStateNumber) >= maxStateNumber)) {
+//                System.out.println("====state size full");
+//            }
+//            if (((current - start) >= 1000000)) {
+//                System.out.println("====timeout");
+//            }
+//        }
+//
+//        System.out.println("over");
+//        System.out.println(stateFlowGraph);
+//        goToTargetState(stateMachine.getTargetStateVertex());
+//    }
 
 
     public void closeMoreWindow(WebDriver driver) {
@@ -149,17 +149,17 @@ public class Crawler {
         }
     }
 
-    public void extractElementByStateVertexDelta(StateMachineImpl oldStateMachine, StateVertex oldStateVertex,
-                                                 StateVertex newStateVertex) throws IOException {
-
-        List<CandidateEvent> candidateEvents = CandidateExtractor.extractCandidateByDelta(
-                oldStateMachine.getSavePath() + oldStateVertex.getStateVertexId() + File.separator,
-                stateMachine.getSavePath() + newStateVertex.getStateVertexId() + File.separator);
-        for (CandidateEvent candidateEvent : candidateEvents) {
-            candidateEvent.setSourceStateVertex(newStateVertex);
-            candidateEventQueue.add(candidateEvent);
-        }
-    }
+//    public void extractElementByStateVertexDelta(StateMachineImpl oldStateMachine, StateVertex oldStateVertex,
+//                                                 StateVertex newStateVertex) throws IOException {
+//
+//        List<CandidateEvent> candidateEvents = CandidateExtractor.extractCandidateByDelta(
+//                oldStateMachine.getSavePath() + oldStateVertex.getStateVertexId() + File.separator,
+//                stateMachine.getSavePath() + newStateVertex.getStateVertexId() + File.separator);
+//        for (CandidateEvent candidateEvent : candidateEvents) {
+//            candidateEvent.setSourceStateVertex(newStateVertex);
+//            candidateEventQueue.add(candidateEvent);
+//        }
+//    }
 
     public void extractElementByStateVertex(StateVertex stateVertex) throws IOException {
         if (!stateVertex.getUrl().startsWith(Constants.getMantisUrl())) return;

@@ -96,7 +96,7 @@ public class MatchFactory {
                 return Integer.compare(dist1, dist2);//smallest come first
             }
         });
-        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "xpath");
+//        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "xpath");
         PreDomNodeInfo match=newPreDomNodeInfoList.get(0);
         String re1=match.getXpath();
         return verifyXPath(preDomNodeInfo, re1, oldStateMachine, newStateMachine, oldEvent, driver);
@@ -184,8 +184,8 @@ public class MatchFactory {
         String packageClassName = signature.replace(".", "\\");//testcases.Claroline_Test_Suite.model_based_dataset.po.Login
 
         String result = VISTA2.retrieveDomNode(oldFullScreenPath, newFullScreenPath, preDomNodeInfo, driver);
-        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "vista");
-//        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, driver);
+        //storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "vista");
+        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, driver);
 //        storeGroundTruth(result, oldStateMachine, newStateMachine, oldEvent);
         String verifiedResult = verifyXPath(preDomNodeInfo, result, oldStateMachine, newStateMachine, oldEvent,driver);
 //
@@ -1250,7 +1250,7 @@ public class MatchFactory {
         System.out.println("line number:" + lineNum);
         String packageClassName = signature.replace(".", "\\");//testcases.Claroline_Test_Suite.model_based_dataset.po.Login
 //        storeCandidates2(preDomNodeInfo, packageClassName, lineNum, ground_truth, oldEvent, oldStateMachine, newStateMachine, 10, newStateMachine.getDriver());
-        storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "water");
+        //storeSpecificCandidates(old, packageClassName, lineNum, gt_xpath, oldEvent, oldStateMachine, newStateMachine, size, driver, "water");
         WebElement webElement = WATER2.retrieveWebElementFromDOMInfo(newStateMachine.getDriver(),
                 preDomNodeInfo, oldHtml, newPreDomNodeInfoList);
         if (webElement != null) {
