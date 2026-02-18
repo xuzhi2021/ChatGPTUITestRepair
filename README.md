@@ -20,9 +20,15 @@ Setup:
 
 1. Build and run the web projects locally
    
-2. Use the Ajc compiler for the "Extraction" Java project to run the test cases
+2. Open "Extraction/WebUIAutoRepair" folder in IDE and load the maven project. If it warns "Unsupport Kotlin JPS plugin version", change the Kotlin plugin version to the minimal supported one in pom.xml.
+
+3. Use the Ajc compiler for the "Extraction" Java project to run the test cases. 
+    IntelliJ: Setting -> Build, Execution, Deployment -> Compiler -> Java Compiler -> Use Compiler -> choose "Ajc". 
+    If Ajc is unavailable, Option1: Setting -> Plugins -> search for "AspectJ" and download. Option2: copy the folder "Extraction/aspectj/" to "C:\Users\<Your User Name>\AppData\Roaming\JetBrains\IntelliJIdea2025.x\plugins" and restart the IntelliJ. If "path to aspectjtools.jar" is not identified and filled automatically, reload all maven projects.
+
+4. Java Version: Java 8 (1.8)
    
-3. Download a ChromeDriver with the same version as your local Chrome browser. Put the driver into the folder Extraction/WebUIAutoRepair/driver. Specify the version in Extraction/WebUIAutoRepair/src/main/resources/config.properties(e.g., chrome_version=119)
+5. Download a ChromeDriver (from "https://googlechromelabs.github.io/chrome-for-testing/") with the same version as your local Chrome browser. Extract the zip, rename the driver.exe to driver_version.exe (e.g., driver_119.exe) and then put it into the folder Extraction/WebUIAutoRepair/driver. Specify the version in Extraction/WebUIAutoRepair/src/main/resources/config.properties(e.g., chrome_version=119)
 
 
 How to run:
@@ -32,7 +38,9 @@ After setting up, run testcases (e.g., Extraction/WebUIAutoRepair/src/main/java/
 
 Extraction/WebUIAutoRepair/src/main/resources/config.properties:
 
-Specify the Chrome driver version on line 5, web project version (old or new) on line 2, algorithm (xpath (edit distance), vista2, water2, webevo, sftm2023) on line 8.
+Specify the Chrome driver version on line 5, web project version (old or new) on line 2, algorithm (xpath (edit distance), vista2, water2, webevo, sftm2023) on line 8. 
+
+After modifying the configuration, make a minimal change (e.g., add and then remove a space) in the file "Extraction/WebUIAutoRepair/src/main/java/autorepair/instrument/Trace.java", then run the tests to force a full recompilation so the updated configuration takes effect.
 
 
 #### Selecting Candidate 
@@ -69,9 +77,10 @@ Use ''chatgpt_repair.py'' to send designed repair prompt to ChatGPT and store th
 
 #### Repair Validator
 
-"analysis_repair.py" parses the statement to separate locator part and other parts (e.g. assertion), and format them.
+"repair_validator1.py" parses the statement to separate locator part and other parts (e.g. assertion), and format them. In the output file method_repair.xlsx, b1, b2, b3, b4 represent the seperated 4 parts of broken statemens while r1, r2, r3, r4 represent those of repaired statements by the LLM. If the parts outside locator keep still (b1=r1, b4=r4), it records re1=1, and re4=1.
 
-''analysis_repair1.py'' first checks whether the matching result is correct. If correct, then check whether the parts outside locator keep still. Thirdly, check whether ChatGPT repairs the locator according to given element information correctly.
+"repair_validator2.py" first checks whether the matching result is correct. If correct, then check whether re1=1, and re4=1. Thirdly, check whether ChatGPT repairs the locator according to given element information correctly for r3, (e.g., if r2 uses "id" as locator, we check whether r3 uses the id value of its selected element.)
+
 
 If the parts outside locator change (this may happen because ChatGPT has diverse code generation patter), we manually check whether the changes are reasonable and compilable.
 
