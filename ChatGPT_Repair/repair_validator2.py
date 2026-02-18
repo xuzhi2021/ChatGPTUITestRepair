@@ -169,7 +169,7 @@ def  write_matching_result(match,output):
                     sheet_re.cell(row=i,column=20,value=0)
                 elif match_result=='1' or match_result==1:
                     sheet_re.cell(row=i,column=20,value=1)
-    workbook_re.save(output_path)
+    workbook_re.save(output)
 
 def check_outside_locator(output):
     workbook=openpyxl.load_workbook(output)

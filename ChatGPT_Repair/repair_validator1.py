@@ -12,7 +12,7 @@ def is_row_empty(row):
     return True
 
 
-def analysis_repair(path,output,a,to_replace):
+def analysis_repair(path,output,to_replace):
 
     # workbook = openpyxl.load_workbook(output)
     workbook = openpyxl.Workbook()
@@ -334,7 +334,7 @@ if __name__ == "__main__":
             output_path = ".../"+method+"_repair"+str(i)+".xlsx"
             to_replace = "chatgpt_answers" + str(i) + "\\" + method
             print(to_replace)
-            analysis_repair(answers_path, output_path, a=a3, to_replace=to_replace)
+            analysis_repair(answers_path, output_path,  to_replace=to_replace)
 
 
 
